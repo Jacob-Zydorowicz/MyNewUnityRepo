@@ -1,6 +1,6 @@
 ﻿/*
  * Jacob Zydorowicz
- * Prototype1
+ * Assignment 2 Prototype1
  * triggers lose when player falls
  */
 using System.Collections;

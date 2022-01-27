@@ -1,6 +1,6 @@
 ﻿/*
  * Jacob Zydorowicz
- * Prototype1
+ * Assignment 2 Prototype1
  * manages score, win/lose, and restart
  */
 using System.Collections;

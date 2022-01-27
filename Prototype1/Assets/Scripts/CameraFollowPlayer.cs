@@ -1,6 +1,6 @@
 ﻿/*
  * Jacob Zydorowicz
- * Prototype1
+ * Assignment 2 Prototype1
  * Makes camera move with the player
  */
 using System.Collections;

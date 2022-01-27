@@ -1,6 +1,6 @@
 ﻿/*
  * Jacob Zydorowicz
- * Prototype1
+ * Assignment 2 Prototype1
  * Allows player to move forward with forward input
  */
 using System.Collections;

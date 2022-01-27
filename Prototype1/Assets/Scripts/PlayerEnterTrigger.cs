@@ -1,6 +1,6 @@
 ﻿/*
  * Jacob Zydorowicz
- * Prototype1
+ * Assignment 2 Prototype1
  * increments score when player hits trigger
  */
 using System.Collections;
