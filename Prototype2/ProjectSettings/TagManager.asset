@@ -7,6 +7,8 @@ TagManager:
   - Animals
   - Food
   - SpawnManager
+  - DisplayScoreText
+  - HealthSystem
   layers:
   - Default
   - TransparentFX

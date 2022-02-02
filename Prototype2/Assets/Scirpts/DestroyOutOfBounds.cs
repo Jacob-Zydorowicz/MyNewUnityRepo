@@ -10,7 +10,14 @@ using UnityEngine;
 public class DestroyOutOfBounds : MonoBehaviour
 {
     public float topBound = 150;
-    public float bottomBound = -10;
+    public float bottomBound = 0;
+    HealthSystem healthSysScript;
+
+
+    private void Start()
+    {
+        healthSysScript  = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -21,7 +28,8 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
         if (transform.position.z < bottomBound)
         {
-            Debug.Log("Game Over!");
+            //Debug.Log("Game Over!");
+            healthSysScript.TakeDamage(); ;
             Destroy(gameObject);
         }
     }
