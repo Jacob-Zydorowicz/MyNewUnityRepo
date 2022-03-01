@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Through
+  - TriggerZone
+  - Gem
+  - ScoreText
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - 
   - Player
   - Ground
-  - 
+  - Gems
   - 
   - 
   - 
@@ -41,6 +44,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 131982245
+    locked: 0
+  - name: Buildings
+    uniqueID: 1699015663
     locked: 0
   - name: Platforms
     uniqueID: 1762779061

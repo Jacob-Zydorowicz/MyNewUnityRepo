@@ -8,12 +8,14 @@ public class GemBehaviour : MonoBehaviour
 	public GameObject gemVisuals;
 	public GameObject collectedParticleSystem;
 	public CircleCollider2D gemCollider2D;
+	public CollectGem gemScore;
 
 	private float durationOfCollectedParticleSystem;
 
 
 	void Start()
 	{
+		gemScore = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<CollectGem>();
 		durationOfCollectedParticleSystem = collectedParticleSystem.GetComponent<ParticleSystem>().main.duration;
 	}
 
@@ -21,6 +23,8 @@ public class GemBehaviour : MonoBehaviour
 	{
 		if (theCollider.CompareTag ("Player")) {
 			GemCollected ();
+			gemScore.score++;
+			
 		}
 	}
 
