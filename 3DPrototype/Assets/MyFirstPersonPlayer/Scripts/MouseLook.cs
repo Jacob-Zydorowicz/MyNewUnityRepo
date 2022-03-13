@@ -1,3 +1,8 @@
+/*
+ * Jacob Zydorowicz
+ * 3D prototype
+ * controls camera with mouse
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

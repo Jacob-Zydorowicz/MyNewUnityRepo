@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Jacob Zydorowicz
+ * 2D prototype
+ * player interaction with physics
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
