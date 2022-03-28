@@ -1,3 +1,8 @@
+/*
+ * Jacob Zydorowicz
+ * 3D prototype
+ * allows gun to shoot through raycasts
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
