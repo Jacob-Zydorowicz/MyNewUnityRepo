@@ -8,6 +8,4 @@ public class InventoryItem
 {
     public int id;
     public string name;
-
-
 }
