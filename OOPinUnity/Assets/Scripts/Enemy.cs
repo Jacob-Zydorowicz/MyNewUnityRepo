@@ -1,4 +1,8 @@
-
+/*
+ * Jacob Zydorowicz
+ * Assignment 6
+ * Base class to demontraste OOP
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

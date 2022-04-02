@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Jacob Zydorowicz
+ * Assignment 6
+ * Singleton to demontraste OOP
+ */
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
