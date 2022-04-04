@@ -18,8 +18,6 @@ public class PlayerController3 : MonoBehaviour
     private Rigidbody playerRb;
 
     public ScoreManager3 scoreMan;
-    public Money monz;
-    public Bomb bombs;
     
 
     private AudioSource playerAudio;
@@ -72,10 +70,11 @@ public class PlayerController3 : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+       
         // if player collides with bomb, explode and set gameOver to true
         if (other.gameObject.CompareTag("Bomb"))
         {
-            bombs.triggerEffect();
+            other.gameObject.GetComponent<Colletable>().triggerEffect();
             scoreMan.gameOver = true;
             scoreMan.won = false;
             Destroy(other.gameObject);
@@ -86,7 +85,7 @@ public class PlayerController3 : MonoBehaviour
         else if (other.gameObject.CompareTag("Money"))
         {
             scoreMan.score++;
-            monz.triggerEffect();
+            other.gameObject.GetComponent<Colletable>().triggerEffect();
             Destroy(other.gameObject);
 
         }

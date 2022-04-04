@@ -7,7 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Golem : Enemy
+public class Golem : Enemy, 
 {
     protected int damage;
     // Start is called before the first frame update
@@ -16,7 +16,6 @@ public class Golem : Enemy
         base.Awake();
         health = 120;
         GameManager.Instance.score += 2;
-
     }
 
     protected override void Attack(int amount)
