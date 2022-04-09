@@ -9,6 +9,8 @@ TagManager:
   - SpawnManager
   - PowerUp
   - Indicator
+  - WaveText
+  - GameManager
   layers:
   - Default
   - TransparentFX

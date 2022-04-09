@@ -26,7 +26,7 @@ public class SpawnManager : MonoBehaviour
     {
         enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
-        if(enemyCount == 0)
+        if(enemyCount == 0 && waveNum <= 10)
         {
             waveNum++;
             spawnEnemyWave(waveNum);
@@ -44,7 +44,7 @@ public class SpawnManager : MonoBehaviour
 
     private void spawnEnemyWave(int numEnemies)
     {
-        for(int i = 0; i < numEnemies; i++)
+        for(int i = 1; i <= numEnemies; i++)
         {
             Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
         }

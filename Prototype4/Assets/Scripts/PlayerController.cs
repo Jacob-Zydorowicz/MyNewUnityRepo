@@ -9,6 +9,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private GameManager gameScript;
     private float powerUpStrength = 15.0f;
     private Rigidbody playerRb;
     public float speed = 5.0f;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.FindGameObjectWithTag("FocalPoint");
+        gameScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -29,6 +31,11 @@ public class PlayerController : MonoBehaviour
     {
         forwardInput = Input.GetAxis("Vertical");
         powerUpIndicator.transform.position = transform.position + new Vector3(0, -.05f, 0);
+
+        if(transform.position.y < -10)
+        {
+            gameScript.gameOver = true;
+        }
     }
 
     private void FixedUpdate()
